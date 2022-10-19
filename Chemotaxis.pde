@@ -25,8 +25,8 @@
      myz=z;
    }
    void move(){
-     myx+=Math.random()*11-5;
-     myy+=Math.random()*11-5;
+     myx+=Math.random()*11-6;
+     myy+=Math.random()*11-6;
    }
    void show(){
      fill(myz);
