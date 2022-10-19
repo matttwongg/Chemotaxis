@@ -1,6 +1,8 @@
  void setup()   
  {     
   size(1000,1000);
+  background(0,0,0);
+  //background(255,255,255);
  }   
  Bacteria[] colony= new Bacteria[10000];
  int a=0;
@@ -9,7 +11,6 @@
  {  
    if(first){
    for(int i=0;i<a;i++){
-     System.out.println(i);
     colony[i].move();
     colony[i].show();
    }
@@ -33,7 +34,7 @@
    }
  }
  void mouseClicked(){
-    int colors=color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+    int colors=color((int)(Math.random()*205+50), (int)(Math.random()*205+50), (int)(Math.random()*205+50));
    first=true;
    for(int i=0;i<100;i++){
    colony[i+a]= new Bacteria(mouseX,mouseY,colors);
